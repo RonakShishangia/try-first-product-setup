@@ -1,0 +1,35 @@
+{
+  "name": "try-first-product-setup",
+  "version": "1.0.0",
+  "description": "This is a learning project, where we will learn to setup product project from A to Z, and anyone can learn from here.",
+  "main": "index.js",
+  "scripts": {
+    "dist": "npx tsc",
+    "dev": "nodemon src/index.ts",
+    "start": "node dist/index.js",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RonakShishangia/try-first-product-setup.git"
+  },
+  "keywords": [
+    "nodejs",
+    "product",
+    "setup"
+  ],
+  "author": "Ronak Shishangia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RonakShishangia/try-first-product-setup/issues"
+  },
+  "homepage": "https://github.com/RonakShishangia/try-first-product-setup#readme",
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
