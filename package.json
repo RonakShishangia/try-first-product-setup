@@ -2,11 +2,11 @@
   "name": "try-first-product-setup",
   "version": "1.0.0",
   "description": "This is a learning project, where we will learn to setup product project from A to Z, and anyone can learn from here.",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "dist": "npx tsc",
-    "dev": "nodemon src/index.ts",
-    "start": "node dist/index.js",
+    "dev": "nodemon src/server.ts",
+    "start": "node dist/server.js",
     "prepare": "husky"
   },
   "repository": {
