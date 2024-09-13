@@ -7,6 +7,8 @@
     "dist": "npx tsc",
     "dev": "nodemon src/server.ts",
     "start": "node dist/server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "prepare": "husky"
   },
   "repository": {
@@ -20,6 +22,11 @@
   ],
   "author": "Ronak Shishangia",
   "license": "MIT",
+  "lint-staged": {
+    "*.ts": [
+      "npm run lint:fix"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/RonakShishangia/try-first-product-setup/issues"
   },
@@ -27,11 +34,15 @@
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
+    "@eslint/js": "^9.10.0",
+    "@types/eslint__js": "^8.42.3",
     "@types/node": "^22.5.4",
+    "eslint": "^9.10.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.5.0"
   }
 }
