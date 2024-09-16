@@ -1,0 +1,4 @@
+{
+    "ent": ".ts",
+    "ignore": ["dist", "node_module"]
+}
